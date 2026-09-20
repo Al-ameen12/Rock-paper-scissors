@@ -68,27 +68,38 @@ function playRound(humanChoice, computerChoice) {
 function playGame() {
 
     console.log("--- Round 1 ---");
+    alert("--- Round 1 ---");
     playRound(getHumanChoice(), getComputerChoice())
     console.log("--- Round 2 ---");
+    alert("--- Round 2 ---");
     playRound(getHumanChoice(), getComputerChoice())
     console.log("--- Round 3 ---");
+    alert("--- Round 3 ---");
     playRound(getHumanChoice(), getComputerChoice())
     console.log("--- Round 4 ---");
+    alert("--- Round 4 ---");
     playRound(getHumanChoice(), getComputerChoice())
     console.log("--- Round 5 ---");
+    alert("--- Round 5 ---");
     playRound(getHumanChoice(), getComputerChoice())
 
     console.log("--- Game Over ---")
+    alert("--- Game Over ---")
     console.log(`Your score: ${humanScore}`)
+    alert(`Your score: ${humanScore}`)
     console.log(`Computer score: ${computerScore}`)
+    alert(`Computer score: ${computerScore}`)
 
     if (humanScore > computerScore) {
         console.log("You Won!!")
+        alert("You Won!!")
 
     }else if (humanScore < computerScore) {
         console.log("You lost!!")
+        alert("You lost!!")
     }else {
         console.log("A tie!!")
+        alert("A tie!!")
     }
 }
 
