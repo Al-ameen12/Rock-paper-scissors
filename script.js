@@ -22,12 +22,15 @@ function playRound(humanChoice, computerChoice) {
 
     if (humanChoice === computerChoice) {
         console.log(`A tie!! you both chose ${humanChoice}`)
+        alert(`A tie!! you both chose ${humanChoice}`)
     }else if (humanChoice === 'ROCK' && computerChoice === 'PAPER' || humanChoice === 'PAPER' && computerChoice === 'ROCK'){
         if (humanChoice === 'PAPER') {
             console.log(`You won!! ${humanChoice} covers ${computerChoice}`)
+            alert(`You won!! ${humanChoice} covers ${computerChoice}`)
             humanScore++
         }else {
             console.log(`You lose!! ${computerChoice} covers ${humanChoice}`)
+            alert(`You lose!! ${computerChoice} covers ${humanChoice}`)
             computerScore++
         }
         // console.log("PAPER won!! it beats ROCK")
@@ -35,18 +38,22 @@ function playRound(humanChoice, computerChoice) {
     }else if (humanChoice === 'ROCK' && computerChoice === 'SCISSORS' || humanChoice === 'SCISSORS' && computerChoice === 'ROCK'){
         if (humanChoice === 'ROCK') {
             console.log(`You won!! ${humanChoice} breaks ${computerChoice}`)
+            alert(`You won!! ${humanChoice} breaks ${computerChoice}`)
             humanScore++
         }else {
             console.log(`You lose!! ${computerChoice} breaks ${humanChoice}`)
+            alert(`You lose!! ${computerChoice} breaks ${humanChoice}`)
             computerScore++
         }
         // console.log("ROCK won!! it beats SCISSORS")
     }else if (humanChoice === 'SCISSORS' && computerChoice === 'PAPER' || humanChoice === 'PAPER' && computerChoice === 'SCISSORS'){
         if (humanChoice === 'SCISSORS') {
             console.log(`You won!! ${humanChoice} cuts ${computerChoice}`)
+            alert(`You won!! ${humanChoice} cuts ${computerChoice}`)
             humanScore++
         }else {
             console.log(`You lose!! ${computerChoice} cuts ${humanChoice}`)
+            alert(`You lose!! ${computerChoice} cuts ${humanChoice}`)
             computerScore++
         }
         // console.log("SCISSORS won! it beats PAPER")
